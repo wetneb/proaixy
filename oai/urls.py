@@ -16,4 +16,5 @@ urlpatterns = patterns('',
         url(r'^login/$', login, {'template_name': 'admin/login.html'}),
         url(r'^source/(?P<pk>\d+)/updateformats/$', updateFormats, name='updateFormats'),
         url(r'^(?P<doi>10\..*)', get_doi, name='get_doi'),
+        url(r'^(?P<doi>[a-z0-9]{3,})$', get_doi, name='get_doi'),
 )
