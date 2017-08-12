@@ -13,7 +13,12 @@
         <p>DOAI (Digital Open Access Identifier) is an alternate DOI (Digital Object Identifier) resolver that takes you to a free version of the requested article,
         when available.</p>
 
-        <p>To use it, replace dx.doi.org by doai.io in any DOI link.</p>
+        <p>To use it, replace <em>dx.doi.org</em> by <em>doai.io</em> in any DOI link, or input the DOI just below.</p>
+
+        <form action="javascript:(function () { window.location = 'http://doai.io/' + document.getElementById('doi_input').value })()">
+          <input type="text" id="doi_input" placeholder="10.1016/j.jalgebra.2015.09.023" required/>
+          <input type="submit" value="Go !"/>
+        </form>
 
         <h2>Examples</h2>
 
